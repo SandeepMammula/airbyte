@@ -1,0 +1,58 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "types": ["vite/client", "vite-plugin-svgr/client", "@modyfi/vite-plugin-yaml/modules"],
+      "baseUrl": "src",
+      "paths": {
+        "components/*": ["components/*"],
+        "core/*": ["core/*"],
+        "hooks/*": ["hooks/*"],
+        "packages/*": ["packages/*"],
+        "services/*": ["services/*"],
+        "views/*": ["views/*"],
+        "utils/*": ["utils/*"],
+        "locales/*": ["locales/*"],
+        "config/*": ["config/*"],
+        "area/*": ["area/*"]
+        // Add any other path mappings you need
+      },
+      "checkJs": false,
+      "allowJs": false,
+      "skipLibCheck": true,
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "strictNullChecks": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "noFallthroughCasesInSwitch": true,
+      "useUnknownInCatchVariables": false,
+      "plugins": [
+        {
+          "name": "typescript-plugin-css-modules",
+          "options": {
+            "rendererOptions": {
+              "sass": {
+                "loadPaths": ["./src", "."]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "include": ["src"]
+  }

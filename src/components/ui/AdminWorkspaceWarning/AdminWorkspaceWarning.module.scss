@@ -1,0 +1,22 @@
+@use "scss/colors";
+@use "scss/variables";
+
+.adminWorkspaceTooltipWrapper {
+  display: flex;
+  cursor: help;
+}
+
+.adminWorkspaceWarning {
+  padding: variables.$spacing-sm;
+  width: 100%;
+  background-color: colors.$red-400;
+}
+
+.listBoxControlButton {
+  border: unset;
+  padding: 0;
+}
+
+.optionsMenuClassName {
+  min-width: 100px;
+}

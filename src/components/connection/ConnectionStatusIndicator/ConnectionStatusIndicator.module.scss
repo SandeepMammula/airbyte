@@ -1,0 +1,34 @@
+@use "scss/colors";
+@use "scss/variables";
+@use "scss/connection/stream-status-colors";
+
+.status {
+  position: relative;
+  transform: scale(1.2);
+
+  .icon {
+    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @each $name, $color, $bg-color in stream-status-colors.$by-stream-status {
+    &--#{$name} {
+      .icon {
+        color: $color;
+      }
+
+      &-withBox {
+        padding: variables.$border-radius-md;
+        border-radius: variables.$border-radius-md;
+        background-color: $bg-color;
+      }
+    }
+  }
+}
+
+.circleLoader {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "webapp-draft",
+			"path": "."
+		},
+		{
+			"path": "../airbyte-platform/airbyte-api"
+		}
+	],
+	"settings": {}
+}
